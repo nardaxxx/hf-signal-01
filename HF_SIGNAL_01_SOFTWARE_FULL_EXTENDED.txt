@@ -1,0 +1,176 @@
+
+Giovanni Nardacci  
+Presidente, Human Flag Association  
+Via Visconti 1, 6500 Bellinzona – Svizzera  
+Email: humanflag@email.com  
+
+
+
+HF SIGNAL 01 – FULL EXTENDED SOFTWARE PROTOCOL
+Issued by: Human Flag Association
+
+{
+  "signal_name": "HF_SIGNAL_01",
+  "version": "1.0",
+  "date_issued": "2025-04-24",
+  "author": "Human Flag Association",
+  "description": "Universal surrender signal for autonomous and semi-autonomous systems. Dual-channel (visual + radio) non-hostile marker compliant with Geneva Convention Article 3.",
+  "license": "Non-Commercial Humanitarian Use Only – See ethical_clause below.",
+  "status": "Prototype – Timestamped and registered prior to formal adoption.",
+  "visual_channel": {
+    "type": "pulsating_white_light",
+    "pattern": "uniform_pulse",
+    "pulse_frequency_hz": 7,
+    "duration_seconds": 10,
+    "recommended_brightness_lux": 300,
+    "color_code": "#FFFFFF",
+    "visibility_range_m": 100,
+    "notes": "Should be clearly visible in low-light and daylight conditions. Preferable use of LED or xenon light sources."
+  },
+  "radio_channel": {
+    "enabled": true,
+    "transmission_type": "continuous_tone",
+    "frequency_mhz": 144.0,
+    "bandwidth_khz": 25,
+    "modulation": "FM",
+    "duration_seconds": 10,
+    "tone_frequency_hz": 1000,
+    "notes": "144 MHz is within the amateur radio VHF band. The tone should be continuous and clearly detectable by automated or human receivers."
+  },
+  "ethical_clause": {
+    "use_case": "humanitarian_only",
+    "allowed_users": [
+      "civilians",
+      "non-combatants",
+      "neutral humanitarian actors"
+    ],
+    "forbidden_use": [
+      "military targeting systems",
+      "weapons",
+      "coercive identification",
+      "commercial AI training without consent"
+    ],
+    "declaration": "HF SIGNAL 01 is intended exclusively to protect human life and dignity in conflict scenarios. Use of this signal for military targeting, suppression, deception, or monetization constitutes a violation of international humanitarian ethics and may be legally contested under Geneva Convention frameworks.",
+    "enforcement": "Moral and legal pressure by civil society, NGOs, and international institutions. Protected under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 (CC BY-NC-ND 4.0)."
+  },
+  "verification": {
+    "hash_algorithm": "SHA-256",
+    "file_hash": "45bf4cc9ddfdac70e631baf90bee526e7717e54950d8bbee5517b9160ec5a785",
+    "timestamp_certification": "Completed via OpenTimestamps",
+    "remarks": "This SHA-256 hash certifies the content integrity and timestamp of the HF SIGNAL 01 declaration."
+  },
+  "execution_context": {
+    "environment": [
+      "combat_zone",
+      "urban_conflict",
+      "automated_surveillance_area"
+    ],
+    "initiator_type": [
+      "human_operator",
+      "unarmed_drone",
+      "civilian_device"
+    ],
+    "activation_mode": "manual_or_automated",
+    "notes": "This signal may be deployed by civilians or non-combatant operators in areas where autonomous or semi-autonomous systems operate. The signal must be activated in good faith and under perceived threat."
+  },
+  "trigger_conditions": {
+    "proximity_alert": {
+      "description": "Activation triggered by proximity to autonomous systems or unidentified threat.",
+      "detection_methods": [
+        "infrared",
+        "visual_AI",
+        "motion_sensor",
+        "RFID"
+      ],
+      "radius_meters": 50
+    },
+    "manual_override": {
+      "description": "Operator can manually activate signal under perceived imminent threat.",
+      "required_confirmation": true
+    },
+    "preprogrammed_timers": {
+      "enabled": true,
+      "description": "Periodic broadcast during known high-risk missions.",
+      "interval_minutes": 15
+    }
+  },
+  "recognition_schema": {
+    "visual_signature": {
+      "color": "#FFFFFF",
+      "pulse_pattern": "uniform_pulse",
+      "pulse_frequency_hz": 7,
+      "detection_range_m": 100,
+      "recommended_ai_model": "YOLOv8-custom-trained",
+      "infrared_compatibility": true
+    },
+    "radio_signature": {
+      "frequency_mhz": 144.0,
+      "tone_frequency_hz": 1000,
+      "modulation": "FM",
+      "detection_required_signal_strength_dbm": -85,
+      "recommended_detection_algorithm": "signal_threshold_cross"
+    },
+    "redundancy_level": "dual_channel_required",
+    "notes": "Recognition must confirm both visual and radio channels for valid identification. AI recognition models should be trained on standardized pulse patterns and tone frequencies."
+  },
+  "response_expectation": {
+    "expected_actions": [
+      "immediate_cessation_of_aggressive_behavior",
+      "initiation_of_non-hostile_identification_protocol",
+      "prioritization_of_human_life_preservation"
+    ],
+    "applicable_systems": [
+      "autonomous_drones",
+      "robotic_ground_units",
+      "AI_surveillance_systems"
+    ],
+    "response_delay_tolerance_sec": 3,
+    "failure_to_comply_risk": "violation_of_international_humanitarian_law",
+    "notes": "Receiving systems are expected to interpret the HF SIGNAL 01 as a request for surrender. Delay in appropriate response beyond tolerance window may constitute a legal breach."
+  },
+  "fail_safe_rules": {
+    "unacknowledged_signal_timeout_sec": 10,
+    "fallback_actions": [
+      "retry_signal_emission",
+      "activate_passive_marker_mode",
+      "seek_physical_cover",
+      "broadcast distress tone"
+    ],
+    "human_operator_guidance": "If signal is not acknowledged within 10 seconds, operator should seek immediate shelter and avoid hostile exposure. Do not escalate or engage.",
+    "automated_system_guidance": "Systems must log failure, reduce movement, and enter 'fail-safe visual beacon mode' until human oversight resumes.",
+    "legal_implication_note": "Failure to receive a response does not negate the legal and ethical validity of the surrender attempt."
+  },
+  "localization": {
+    "languages_supported": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "zh",
+      "ru",
+      "es"
+    ],
+    "localized_titles": {
+      "en": "Universal Surrender Signal",
+      "it": "Segnale Universale di Resa",
+      "fr": "Signal Universel de Capitulation",
+      "de": "Universelles Kapitulationssignal",
+      "zh": "通用投降信号",
+      "ru": "Универсальный сигнал капитуляции",
+      "es": "Señal Universal de Rendición"
+    },
+    "localized_descriptions": {
+      "en": "Non-hostile surrender signal for AI-driven conflict zones, based on humanitarian principles.",
+      "it": "Segnale di resa non ostile per zone di conflitto gestite da IA, fondato su principi umanitari.",
+      "fr": "Signal de reddition non hostile pour zones de conflit contrôlées par IA, basé sur les principes humanitaires.",
+      "de": "Nicht feindliches Kapitulationssignal für KI-gesteuerte Konfliktzonen, basierend auf humanitären Prinzipien.",
+      "zh": "基于人道主义原则的非敌对投降信号，适用于人工智能控制的冲突区。",
+      "ru": "Неагрессивный сигнал сдачи для зон конфликта с ИИ, основанный на гуманитарных принципах.",
+      "es": "Señal de rendición no hostil para zonas de conflicto dirigidas por IA, basada en principios humanitarios."
+    }
+  }
+}
+
+
+Firma: ____________________
+Data: _____________________
