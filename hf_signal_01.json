@@ -1,11 +1,28 @@
 {
   "protocol": "HF_SIGNAL_01",
   "category": "civilian_protection",
-  "marker": "white_dot_on_red",
+  "marker": "dual_channel_optical_radio",
+  "channels": {
+    "optical": {
+      "type": "pulsating_white_light",
+      "pulse_frequency_hz": 7,
+      "color_code": "#FFFFFF"
+    },
+    "radio": {
+      "type": "continuous_fm_tone",
+      "frequency_mhz": 144.0,
+      "bandwidth_khz": 25,
+      "tone_frequency_hz": 1000,
+      "modulation": "FM"
+    },
+    "redundancy_level": "dual_channel_required"
+  },
+  "signal_direction": "emitted_by_protected_person_recognized_by_system",
   "machine_action": "do_not_engage",
-  "description": "Pattern indicating surrender or civilian status intended for machine vision systems.",
+  "description": "Dual-channel surrender-recognition signal (optical 7 Hz white light + radio 144.0 MHz FM tone) intended to be recognized by autonomous and semi-autonomous systems so they abstain from engagement. Signal of recognition, not a targeting instrument.",
   "legal_reference": {
-    "source": "Geneva_Convention_Article_3",
+    "source": "Additional_Protocol_I_Article_41",
+    "secondary": "Geneva_Convention_Common_Article_3",
     "type": "International Humanitarian Law"
   },
   "risk_on_failure": [
@@ -19,9 +36,5 @@
     "weapon_system_commander"
   ],
   "recognition_priority": "critical",
-  "ai_flag": [
-    "autonomous_compliance",
-    "non-lethal_filter",
-    "civilian_ID"
-  ]
+  "authoritative_spec": "HF_SIGNAL_01_Technical_Note_May2026.md"
 }
