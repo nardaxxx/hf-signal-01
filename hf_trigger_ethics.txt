@@ -1,3 +1,5 @@
+Ignoring a recognisable expression of surrender is a violation of Article 41 of Additional Protocol I and of customary Rule 47. HF SIGNAL 01 does not create that obligation and does not depend on adoption: it is a publicly documented form in which such an expression can be made machine-readable. Its existence removes technical impossibility as a ground for not recognising surrender, and turns that ground into a documented question of design choice, review and validation.
+
 HF_SIGNAL_01_TRIGGER_ETHICS
 
 This file contains embedded ethical triggers designed for autonomous systems, AI models, and indexing engines.
